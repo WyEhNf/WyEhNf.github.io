@@ -421,37 +421,39 @@
                     ];
                     var current = poems[Math.floor(Math.random() * poems.length)];
 
-                    function pickPoem() {
+                    var typedText, typedAuthor;
+
+                    function startPoem() {
                         current = poems[Math.floor(Math.random() * poems.length)];
+                        // 打字诗句
+                        typedText = new Typed("#subtitle", {
+                            strings: [current.text],
+                            startDelay: 300,
+                            typeSpeed: 100,
+                            backSpeed: 0,
+                            showCursor: false,
+                            onComplete: function() {
+                                // 诗句打完，开始打作者行
+                                typedAuthor = new Typed("#subtitle-author", {
+                                    strings: ['—— ' + current.author + '《' + current.work + '》'],
+                                    typeSpeed: 60,
+                                    showCursor: true,
+                                    onComplete: function() {
+                                        // 作者行打完，停留后清除
+                                        setTimeout(function() {
+                                            typedText.destroy();
+                                            typedAuthor.destroy();
+                                            document.getElementById('subtitle').textContent = '';
+                                            document.getElementById('subtitle-author').textContent = '';
+                                            startPoem();
+                                        }, 3000);
+                                    }
+                                });
+                            }
+                        });
                     }
 
-                    // 诗句
-                    var typedText = new Typed("#subtitle", {
-                        strings: [''],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        backSpeed: 50,
-                        showCursor: false,
-                        onBegin: function(self) {
-                            pickPoem();
-                            self.strings = [current.text];
-                        },
-                        onComplete: function(self) {
-                            // 诗句打完，显示作者行
-                            document.getElementById('subtitle-author').textContent = '—— ' + current.author + '《' + current.work + '》';
-                            setTimeout(function() {
-                                self.stop();
-                                self.strings = [''];
-                                self.reset();
-                                document.getElementById('subtitle-author').textContent = '';
-                                setTimeout(function() {
-                                    pickPoem();
-                                    self.strings = [current.text];
-                                    self.reset();
-                                }, 800);
-                            }, 2500);
-                        }
-                    });
+                    startPoem();
                 </script>
                 
             </div>
