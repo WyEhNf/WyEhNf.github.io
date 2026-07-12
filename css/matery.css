@@ -596,15 +596,14 @@ header .go-back i {
     color: #eee;
 }
 
-#subtitle {
-    font-family: 'Zhi Mang Xing', 'STXingkai', 'KaiTi', '楷体', cursive;
+.bg-cover #subtitle {
+    font-family: 'Zhi Mang Xing', 'STXingkai', 'KaiTi', '楷体', cursive !important;
     font-size: 1.5rem;
     letter-spacing: 0.1em;
 }
 
-#subtitle-author {
-    display: block;
-    font-family: 'Zhi Mang Xing', 'STXingkai', 'KaiTi', '楷体', cursive;
+.bg-cover #subtitle-author {
+    font-family: 'Zhi Mang Xing', 'STXingkai', 'KaiTi', '楷体', cursive !important;
     font-size: 1rem;
     color: #ddd;
     margin-top: 0.5rem;
