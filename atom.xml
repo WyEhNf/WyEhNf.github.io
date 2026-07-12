@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>WyEhNf</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <id>https://wyhnf.github.io/</id>
+  <link href="https://wyhnf.github.io/" rel="alternate"/>
+  <link href="https://wyhnf.github.io/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, WyEhNf</rights>
+  <title>WyEhNf's Blog</title>
+  <updated>2026-07-12T07:51:29.236Z</updated>
+  <entry>
+    <author>
+      <name>WyEhNf</name>
+    </author>
+    <id>https://wyhnf.github.io/2026/07/12/test/</id>
+    <link href="https://wyhnf.github.io/2026/07/12/test/"/>
+    <published>2026-07-12T07:39:51.000Z</published>
+    <summary>
+      <![CDATA[<p>test!!!!</p>]]>
+    </summary>
+    <title>'test'</title>
+    <updated>2026-07-12T07:51:29.236Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>WyEhNf</name>
+    </author>
+    <id>https://wyhnf.github.io/2026/05/24/hello-world/</id>
+    <link href="https://wyhnf.github.io/2026/05/24/hello-world/"/>
+    <published>2026-05-24T14:31:54.766Z</published>
+    <summary>
+      <![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a>]]>
+    </summary>
+    <title>Hello World</title>
+    <updated>2026-05-24T14:31:54.766Z</updated>
+  </entry>
+</feed>
