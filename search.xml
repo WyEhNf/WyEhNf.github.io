@@ -5,8 +5,8 @@
     
     <entry>
       <title>Pacman</title>
-      <link href="//pacman"/>
-      <url>//pacman</url>
+      <link href="//pacman/"/>
+      <url>//pacman/</url>
       
         <content type="html"><![CDATA[<div id="pdf-container-pacman" style="max-width:100%;"></div><p><a href="/files/Pacman.pdf">📥 下载 PDF</a></p><script>pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';pdfjsLib.getDocument('/files/Pacman.pdf').promise.then(function(pdf) {    var container = document.getElementById('pdf-container-pacman');    for (var i = 1; i <= pdf.numPages; i++) {        pdf.getPage(i).then(function(page) {            var scale = 1.5;            var viewport = page.getViewport({ scale: scale });            var canvas = document.createElement('canvas');            canvas.style.display = 'block';            canvas.style.margin = '0 auto 20px';            canvas.style.maxWidth = '100%';            canvas.style.height = 'auto';            canvas.width = viewport.width;            canvas.height = viewport.height;            container.appendChild(canvas);            page.render({ canvasContext: canvas.getContext('2d'), viewport: viewport });        });    }});</script>]]></content>
       
@@ -26,8 +26,8 @@
     
     <entry>
       <title>RayTracer</title>
-      <link href="//raytracer"/>
-      <url>//raytracer</url>
+      <link href="//raytracer/"/>
+      <url>//raytracer/</url>
       
         <content type="html"><![CDATA[<div id="pdf-container-raytracer" style="max-width:100%;"></div><p><a href="/files/RayTracer-Rendering-of-complex-Scenes.pdf">📥 下载 PDF</a></p><script>pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';pdfjsLib.getDocument('/files/RayTracer-Rendering-of-complex-Scenes.pdf').promise.then(function(pdf) {    var container = document.getElementById('pdf-container-raytracer');    for (var i = 1; i <= pdf.numPages; i++) {        pdf.getPage(i).then(function(page) {            var scale = 1.5;            var viewport = page.getViewport({ scale: scale });            var canvas = document.createElement('canvas');            canvas.style.display = 'block';            canvas.style.margin = '0 auto 20px';            canvas.style.maxWidth = '100%';            canvas.style.height = 'auto';            canvas.width = viewport.width;            canvas.height = viewport.height;            container.appendChild(canvas);            page.render({ canvasContext: canvas.getContext('2d'), viewport: viewport });        });    }});</script>]]></content>
       

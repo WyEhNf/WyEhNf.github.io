@@ -10,15 +10,15 @@
   <rights>All rights reserved 2026, WyEhNf</rights>
   <subtitle>今月曾照</subtitle>
   <title>WyEhNf's Blog</title>
-  <updated>2026-07-12T12:14:38.465Z</updated>
+  <updated>2026-07-12T12:18:04.580Z</updated>
   <entry>
     <author>
       <name>WyEhNf</name>
     </author>
     <category term="Game" scheme="https://wyhnf.github.io/tags/Game/"/>
     <category term="AI" scheme="https://wyhnf.github.io/tags/AI/"/>
-    <id>https://wyhnf.github.io/pacman</id>
-    <link href="https://wyhnf.github.io/pacman"/>
+    <id>https://wyhnf.github.io/pacman/</id>
+    <link href="https://wyhnf.github.io/pacman/"/>
     <published>2026-07-12T11:58:00.000Z</published>
     <summary>
       <![CDATA[<div id="pdf-container-pacman" style="max-width:100%;"></div>
@@ -26,7 +26,7 @@
 <p><a href="/files/Pacman.pdf">📥 下载]]>
     </summary>
     <title>Pacman</title>
-    <updated>2026-07-12T12:14:38.465Z</updated>
+    <updated>2026-07-12T12:18:04.580Z</updated>
   </entry>
   <entry>
     <author>
@@ -34,8 +34,8 @@
     </author>
     <category term="Graphics" scheme="https://wyhnf.github.io/tags/Graphics/"/>
     <category term="RayTracing" scheme="https://wyhnf.github.io/tags/RayTracing/"/>
-    <id>https://wyhnf.github.io/raytracer</id>
-    <link href="https://wyhnf.github.io/raytracer"/>
+    <id>https://wyhnf.github.io/raytracer/</id>
+    <link href="https://wyhnf.github.io/raytracer/"/>
     <published>2026-07-12T11:51:38.000Z</published>
     <summary>
       <![CDATA[<div id="pdf-container-raytracer" style="max-width:100%;"></div>
@@ -43,6 +43,6 @@
 <p><a href="/files/RayTracer-Rendering-of-complex-Scenes.pdf">📥 下载]]>
     </summary>
     <title>RayTracer</title>
-    <updated>2026-07-12T12:14:42.249Z</updated>
+    <updated>2026-07-12T12:18:05.612Z</updated>
   </entry>
 </feed>
