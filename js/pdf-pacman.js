@@ -5,7 +5,7 @@
     pdfjsLib.getDocument('/files/Pacman.pdf').promise.then(function(pdf) {
         for (var i = 1; i <= pdf.numPages; i++) {
             pdf.getPage(i).then(function(page) {
-                var scale = 2.5;
+                var scale = 4.5;
                 var viewport = page.getViewport({ scale: scale });
                 var canvas = document.createElement('canvas');
                 canvas.style.display = 'block';
