@@ -10,7 +10,7 @@
   <rights>All rights reserved 2026, WyEhNf</rights>
   <subtitle>今月曾照</subtitle>
   <title>WyEhNf's Blog</title>
-  <updated>2026-07-12T12:11:25.931Z</updated>
+  <updated>2026-07-12T12:14:38.465Z</updated>
   <entry>
     <author>
       <name>WyEhNf</name>
@@ -21,12 +21,12 @@
     <link href="https://wyhnf.github.io/pacman"/>
     <published>2026-07-12T11:58:00.000Z</published>
     <summary>
-      <![CDATA[<embed src="/files/Pacman.pdf" width="100%" height="800px" type="application/pdf">
+      <![CDATA[<div id="pdf-container-pacman" style="max-width:100%;"></div>
 
 <p><a href="/files/Pacman.pdf">📥 下载]]>
     </summary>
     <title>Pacman</title>
-    <updated>2026-07-12T12:11:25.931Z</updated>
+    <updated>2026-07-12T12:14:38.465Z</updated>
   </entry>
   <entry>
     <author>
@@ -38,11 +38,11 @@
     <link href="https://wyhnf.github.io/raytracer"/>
     <published>2026-07-12T11:51:38.000Z</published>
     <summary>
-      <![CDATA[<embed src="/files/RayTracer-Rendering-of-complex-Scenes.pdf" width="100%" height="800px" type="application/pdf">
+      <![CDATA[<div id="pdf-container-raytracer" style="max-width:100%;"></div>
 
-<p><a]]>
+<p><a href="/files/RayTracer-Rendering-of-complex-Scenes.pdf">📥 下载]]>
     </summary>
     <title>RayTracer</title>
-    <updated>2026-07-12T12:00:18.486Z</updated>
+    <updated>2026-07-12T12:14:42.249Z</updated>
   </entry>
 </feed>
