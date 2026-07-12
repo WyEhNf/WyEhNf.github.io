@@ -4,9 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="&#39;test&#39;, WyEhNf&#39;s Blog">
-    <meta name="description" content="test!!!!
-">
+    <meta name="keywords" content="标签: RayTracing, WyEhNf&#39;s Blog">
+    <meta name="description" content="WyEhNf&#39;s Blog">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>&#39;test&#39; | WyEhNf&#39;s Blog</title>
+    <title>标签: RayTracing | WyEhNf&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     <!-- Google Fonts: 马山正(标题) + 思源宋体(正文) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -338,414 +337,175 @@
 
 </header>
 
-    
-
-
-
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
-    <div class="container" style="right: 0px;left: 0px;">
-        <div class="row">
-            <div class="col s12 m12 l12">
-                <div class="brand">
-                    <h1 class="description center-align post-title">&#39;test&#39;</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-<main class="post-container content">
-
-    
+    <div class="bg-cover pd-header about-cover">
+    <div class="container">
     <div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
-<div id="artDetail">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                
+                今月曾照
+                
+            </div>
+
+            <div class="description center-align">
+                
+                <span id="subtitle"></span>
+                <div id="subtitle-author"></div>
+                <script src="/libs/typed/typed.js"></script>
+                <script>
+                    var poems = [
+                        { text: '人生若只如初见，何事秋风悲画扇。', author: '纳兰性德', work: '木兰花令' },
+                        { text: '但愿人长久，千里共婵娟。', author: '苏轼', work: '水调歌头' },
+                        { text: '海上生明月，天涯共此时。', author: '张九龄', work: '望月怀远' },
+                        { text: '曾经沧海难为水，除却巫山不是云。', author: '元稹', work: '离思' },
+                        { text: '此情可待成追忆，只是当时已惘然。', author: '李商隐', work: '锦瑟' },
+                        { text: '山重水复疑无路，柳暗花明又一村。', author: '陆游', work: '游山西村' },
+                        { text: '大漠孤烟直，长河落日圆。', author: '王维', work: '使至塞上' },
+                        { text: '天生我材必有用，千金散尽还复来。', author: '李白', work: '将进酒' },
+                        { text: '落霞与孤鹜齐飞，秋水共长天一色。', author: '王勃', work: '滕王阁序' },
+                        { text: '不以物喜，不以己悲。', author: '范仲淹', work: '岳阳楼记' },
+                        { text: '今人不见古时月，今月曾经照古人。', author: '李白', work: '把酒问月' },
+                        { text: '众里寻他千百度，蓦然回首，那人却在，灯火阑珊处。', author: '辛弃疾', work: '青玉案' },
+                        { text: '春风得意马蹄疾，一日看尽长安花。', author: '孟郊', work: '登科后' },
+                        { text: '世事一场大梦，人生几度秋凉。', author: '苏轼', work: '西江月' },
+                        { text: '宠辱不惊，看庭前花开花落；去留无意，望天上云卷云舒。', author: '陈继儒', work: '小窗幽记' },
+                        { text: '问君能有几多愁，恰似一江春水向东流。', author: '李煜', work: '虞美人' },
+                        { text: '醉后不知天在水，满船清梦压星河。', author: '唐温如', work: '题龙阳县青草湖' },
+                        { text: '疏影横斜水清浅，暗香浮动月黄昏。', author: '林逋', work: '山园小梅' },
+                        { text: '长风破浪会有时，直挂云帆济沧海。', author: '李白', work: '行路难' },
+                        { text: '行到水穷处，坐看云起时。', author: '王维', work: '终南别业' }
+                    ];
+                    var current = poems[Math.floor(Math.random() * poems.length)];
+
+                    var typedText, typedAuthor;
+
+                    function startPoem() {
+                        current = poems[Math.floor(Math.random() * poems.length)];
+                        // 打字诗句
+                        typedText = new Typed("#subtitle", {
+                            strings: [current.text],
+                            startDelay: 300,
+                            typeSpeed: 100,
+                            backSpeed: 0,
+                            showCursor: false,
+                            onComplete: function() {
+                                // 诗句打完，开始打作者行
+                                typedAuthor = new Typed("#subtitle-author", {
+                                    strings: ['—— ' + current.author + '《' + current.work + '》'],
+                                    typeSpeed: 60,
+                                    showCursor: true,
+                                    onComplete: function() {
+                                        // 作者行打完，停留后清除
+                                        setTimeout(function() {
+                                            typedText.destroy();
+                                            typedAuthor.destroy();
+                                            document.getElementById('subtitle').textContent = '';
+                                            document.getElementById('subtitle-author').textContent = '';
+                                            startPoem();
+                                        }, 3000);
+                                    }
+                                });
+                            }
+                        });
+                    }
+
+                    startPoem();
+                </script>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // 根据北京时间每4小时切换背景图，从凌晨4:00开始
+    // 04:00-07:59 → pic0, 08:00-11:59 → pic1, 12:00-15:59 → pic2
+    // 16:00-19:59 → pic3, 20:00-23:59 → pic4, 00:00-03:59 → pic5
+    var picFiles = ['pic0.png', 'pic1.webp', 'pic2.jpg', 'pic3.jpg', 'pic4.webp', 'pic5.png'];
+    var now = new Date();
+    var beijingHour = (now.getUTCHours() + 8) % 24;
+    var slotIndex = Math.floor(((beijingHour + 20) % 24) / 4);
+    var bannerUrl = "/medias/featureimages/" + picFiles[slotIndex];
+    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    $('.bg-cover.about-cover').css('background-image', 'url(' + bannerUrl + ')');
+</script>
+
+
+    </div>
+</div>
+
+<main class="content">
+
+    
+
+<div id="tags" class="container chip-container">
     <div class="card">
-        <div class="card-content article-info">
-            <div class="row tag-cate">
-                <div class="col s7">
-                    
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
-                    
-                </div>
-                <div class="col s5 right-align">
-                    
-                </div>
+        <div class="card-content">
+            <div class="tag-title center-align">
+                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
             </div>
-
-            <div class="post-info">
+            <div class="tag-chips">
                 
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2026-07-12
-                </div>
                 
-
+                <a href="/tags/Graphics/" title="Graphics: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Graphics" style="background-color: #F9EBEA;">Graphics
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
                 
-
                 
-
-                
-
+                <a href="/tags/RayTracing/" title="RayTracing: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            data-tagname="RayTracing" style="background-color: #F5EEF8;">RayTracing
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
                 
             </div>
         </div>
-        <hr class="clearfix">
-
-        
-        <!-- 是否加载使用自带的 prismjs. -->
-        <link rel="stylesheet" href="/libs/prism/prism.min.css">
-        
-
-        
-
-        <div class="card-content article-card-content">
-            <div id="articleContent">
-                <p>test!!!!</p>
-<span id="more"></span>
-                
-            </div>
-            <hr/>
-
-            
-
-    <div class="reprint" id="reprint-statement">
-        
-            <div class="reprint__author">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-user">
-                        文章作者:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">WyEhNf</a>
-                </span>
-            </div>
-            <div class="reprint__type">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-link">
-                        文章链接:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="https://wyhnf.github.io/2026/07/12/test/">https://wyhnf.github.io/2026/07/12/test/</a>
-                </span>
-            </div>
-            <div class="reprint__notice">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-copyright">
-                        版权声明:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    本博客所有文章除特別声明外，均采用
-                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
-                    许可协议。转载请注明来源
-                    <a href="/about" target="_blank">WyEhNf</a>
-                    !
-                </span>
-            </div>
-        
     </div>
+</div>
 
-    <script async defer>
-      document.addEventListener("copy", function (e) {
-        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
-        M.toast({html: toastHTML})
-      });
+    
 
-      function navToReprintStatement() {
-        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
-      }
-    </script>
-
-
-
-            <div class="tag_share" style="display: block;">
-                <div class="post-meta__tag-list" style="display: inline-block;">
-                    
-                        <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
+            
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="Graphics, RayTracing" data-aos="fade-up">
+                <div class="card">
+                    <a href="/2026/07/12/raytracer-xuan-ran-fu-za-chang-jing/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="RayTracer 渲染复杂场景">
+                            
+                            <span class="card-title">RayTracer 渲染复杂场景</span>
                         </div>
-                    
-                </div>
-                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
-<div id="article-share">
-
-    
-    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="/libs/share/js/social-share.min.js"></script>
-    
-
-    
-
-</div>
-
-                </div>
-            </div>
-            
-                <div id="reward">
-    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
-
-    <!-- Modal Structure -->
-    <div id="rewardModal" class="modal">
-        <div class="modal-content">
-            <a class="close modal-close"><i class="fas fa-times"></i></a>
-            <h4 class="reward-title">你的赏识是我前进的动力</h4>
-            <div class="reward-content">
-                <div class="reward-tabs">
-                    <ul class="tabs row">
-                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
-                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
-                    </ul>
-                    <div id="alipay">
-                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
-                    </div>
-                    <div id="wechat">
-                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    $(function () {
-        $('.tabs').tabs();
-    });
-</script>
-
-            
-        </div>
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-<article id="prenext-posts" class="prev-next articles">
-    <div class="row article-row">
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
-            <div class="card">
-                <a href="/2026/07/12/raytracer-xuan-ran-fu-za-chang-jing/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="RayTracer 渲染复杂场景">
-                        
-                        <span class="card-title">RayTracer 渲染复杂场景</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2026-07-12
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            WyEhNf
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Graphics/">
-                        <span class="chip bg-color">Graphics</span>
                     </a>
-                    
-                    <a href="/tags/RayTracing/">
-                        <span class="chip bg-color">RayTracing</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2026/05/24/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
+                    <div class="card-content article-content">
+                        <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2026-05-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2026-07-12
                             </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            WyEhNf
-                            
-                        </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                WyEhNf
+                                
+                            </span>
+                        </div>
                     </div>
                 </div>
-                
             </div>
+            
         </div>
-        
-    </div>
-</article>
-
-</div>
-
-
-
-<!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
-
-
-  <!-- 是否加载使用自带的 prismjs. -->
-  <script type="text/javascript" src="/libs/prism/prism.min.js"></script>
-
-
-<!-- 代码语言 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
-
-
-<!-- 代码块复制 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
-
-
-<!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
-
-
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget card" style="background-color: white;">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
-            <div id="toc-content"></div>
-        </div>
-    </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-<div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
-        <i class="fas fa-list-ul"></i>
-    </a>
-</div>
-
-
-<script src="/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-
-        
-        /* 修复文章卡片 div 的宽度. */
-        let fixPostCardWidth = function (srcId, targetId) {
-            let srcDiv = $('#' + srcId);
-            if (srcDiv.length === 0) {
-                return;
-            }
-
-            let w = srcDiv.width();
-            if (w >= 450) {
-                w = w + 21;
-            } else if (w >= 350 && w < 450) {
-                w = w + 18;
-            } else if (w >= 300 && w < 350) {
-                w = w + 16;
-            } else {
-                w = w + 14;
-            }
-            $('#' + targetId).width(w);
-        };
-
-        // 切换TOC目录展开收缩的相关操作.
-        const expandedClass = 'expanded';
-        let $tocAside = $('#toc-aside');
-        let $mainContent = $('#main-content');
-        $('#floating-toc-btn .btn-floating').click(function () {
-            if ($tocAside.hasClass(expandedClass)) {
-                $tocAside.removeClass(expandedClass).hide();
-                $mainContent.removeClass('l9');
-            } else {
-                $tocAside.addClass(expandedClass).show();
-                $mainContent.addClass('l9');
-            }
-            fixPostCardWidth('artDetail', 'prenext-posts');
-        });
-        
-    });
-</script>
-
-    
-
+    </article>
 </main>
 
 

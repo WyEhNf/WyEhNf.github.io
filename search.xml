@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>RayTracer 渲染复杂场景</title>
+      <link href="/2026/07/12/raytracer-xuan-ran-fu-za-chang-jing/"/>
+      <url>/2026/07/12/raytracer-xuan-ran-fu-za-chang-jing/</url>
+      
+        <content type="html"><![CDATA[<embed src="/files/RayTracer-Rendering-of-complex-Scenes.pdf" width="100%" height="800px" type="application/pdf"><p><a href="/files/RayTracer-Rendering-of-complex-Scenes.pdf">📥 下载 PDF</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Graphics </tag>
+            
+            <tag> RayTracing </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>&#39;test&#39;</title>
       <link href="/2026/07/12/test/"/>
       <url>/2026/07/12/test/</url>
