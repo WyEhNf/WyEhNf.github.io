@@ -39,6 +39,16 @@ body {
     color: #34495e;
     overflow-x: hidden;
     overflow-y: auto;
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'STSong', 'SimSun', 'Songti SC', serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.bg-cover .title,
+.brand .title,
+.card-title,
+nav .brand-logo {
+    font-family: 'Ma Shan Zheng', 'STKaiti', 'KaiTi', '楷体', cursive;
+    font-weight: 400;
 }
 
 h1 {
