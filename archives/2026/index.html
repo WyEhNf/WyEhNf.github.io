@@ -353,19 +353,40 @@
                 <span id="subtitle"></span>
                 <script src="/libs/typed/typed.js"></script>
                 <script>
+                    var poems = [
+                        '人生若只如初见，何事秋风悲画扇。',
+                        '但愿人长久，千里共婵娟。',
+                        '海上生明月，天涯共此时。',
+                        '曾经沧海难为水，除却巫山不是云。',
+                        '此情可待成追忆，只是当时已惘然。',
+                        '山重水复疑无路，柳暗花明又一村。',
+                        '大漠孤烟直，长河落日圆。',
+                        '天生我材必有用，千金散尽还复来。',
+                        '落霞与孤鹜齐飞，秋水共长天一色。',
+                        '不以物喜，不以己悲。',
+                        '今人不见古时月，今月曾经照古人。',
+                        '众里寻他千百度，蓦然回首，那人却在，灯火阑珊处。',
+                        '春风得意马蹄疾，一日看尽长安花。',
+                        '世事一场大梦，人生几度秋凉。',
+                        '宠辱不惊，看庭前花开花落；去留无意，望天上云卷云舒。',
+                        '问君能有几多愁，恰似一江春水向东流。',
+                        '醉后不知天在水，满船清梦压星河。',
+                        '疏影横斜水清浅，暗香浮动月黄昏。',
+                        '长风破浪会有时，直挂云帆济沧海。',
+                        '行到水穷处，坐看云起时。'
+                    ];
+                    var currentPoem = poems[Math.floor(Math.random() * poems.length)];
                     var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "从来没有真正的绝境, 只有心灵的迷途",
-                            
-                                "Never really desperate, only the lost of the soul",
-                            
-                        ],
+                        strings: [currentPoem],
                         startDelay: 300,
                         typeSpeed: 100,
                         loop: true,
                         backSpeed: 50,
-                        showCursor: true
+                        showCursor: true,
+                        onLastStringBackspaced: function(self) {
+                            currentPoem = poems[Math.floor(Math.random() * poems.length)];
+                            self.strings = [currentPoem];
+                        }
                     });
                 </script>
                 
