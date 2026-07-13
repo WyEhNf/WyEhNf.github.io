@@ -600,13 +600,11 @@ header .go-back i {
     font-family: 'Zhi Mang Xing', 'STXingkai', 'KaiTi', '楷体', cursive !important;
     font-size: 1.5rem;
     letter-spacing: 0.1em;
-    color: #aaa !important;
 }
 
 .bg-cover #subtitle-author {
     font-family: 'Zhi Mang Xing', 'STXingkai', 'KaiTi', '楷体', cursive !important;
     font-size: 1rem;
-    color: #999 !important;
     margin-top: 0.5rem;
     min-height: 1.5em;
 }
