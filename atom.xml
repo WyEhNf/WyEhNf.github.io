@@ -10,7 +10,26 @@
   <rights>All rights reserved 2026, WyEhNf</rights>
   <subtitle>今月曾照</subtitle>
   <title>WyEhNf's Blog</title>
-  <updated>2026-07-13T03:20:50.528Z</updated>
+  <updated>2026-07-24T08:29:41.399Z</updated>
+  <entry>
+    <author>
+      <name>WyEhNf</name>
+    </author>
+    <category term="AI" scheme="https://wyhnf.github.io/tags/AI/"/>
+    <category term="NLP" scheme="https://wyhnf.github.io/tags/NLP/"/>
+    <category term="Deep Learning" scheme="https://wyhnf.github.io/tags/Deep-Learning/"/>
+    <id>https://wyhnf.github.io/transformer/</id>
+    <link href="https://wyhnf.github.io/transformer/"/>
+    <published>2026-07-13T15:00:00.000Z</published>
+    <summary>
+      <![CDATA[<div id="pdf-container-transformer" style="max-width:100%;"></div>
+
+<p><a href="/files/transformer_en.pdf">📥 Download PDF</a></p>
+<script]]>
+    </summary>
+    <title>Introduction to Transformer</title>
+    <updated>2026-07-24T08:29:41.399Z</updated>
+  </entry>
   <entry>
     <author>
       <name>WyEhNf</name>

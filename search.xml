@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>Introduction to Transformer</title>
+      <link href="//transformer/"/>
+      <url>//transformer/</url>
+      
+        <content type="html"><![CDATA[<div id="pdf-container-transformer" style="max-width:100%;"></div><p><a href="/files/transformer_en.pdf">📥 Download PDF</a></p><script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script><script src="/js/pdf-transformer.js"></script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> AI </tag>
+            
+            <tag> NLP </tag>
+            
+            <tag> Deep Learning </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Pacman</title>
       <link href="//pacman/"/>
       <url>//pacman/</url>
