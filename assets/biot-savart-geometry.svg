@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-labelledby="title desc">
+  <title id="title">毕奥—萨伐尔定律的几何量</title><desc id="desc">载流导线元 Idl' 位于 r'，场点 P 位于 r，分离矢量 R，夹角 alpha，dB 垂直纸面向外。</desc>
+  <defs>
+    <marker id="b" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L9 3L0 6Z" fill="#285c9e"/></marker>
+    <marker id="r" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L9 3L0 6Z" fill="#d84b45"/></marker>
+  </defs>
+  <rect width="900" height="430" fill="#fff"/>
+  <line x1="150" y1="40" x2="150" y2="380" stroke="#333" stroke-width="2"/>
+  <line x1="130" y1="300" x2="170" y2="180" stroke="#d84b45" stroke-width="6" marker-end="url(#r)"/>
+  <text x="195" y="215" fill="#d84b45" font-family="Arial,sans-serif" font-size="24">I dl′</text>
+  <text x="105" y="60" font-family="Arial,sans-serif" font-size="20">导线</text>
+  <line x1="150" y1="180" x2="640" y2="300" stroke="#285c9e" stroke-width="4" marker-end="url(#b)"/>
+  <text x="380" y="235" fill="#285c9e" font-family="Arial,sans-serif" font-size="22">R = r − r′</text>
+  <path d="M170 180 A120 120 0 0 0 205 260" fill="none" stroke="#333" stroke-width="2"/>
+  <text x="185" y="235" font-family="Arial,sans-serif" font-size="22">α</text>
+  <circle cx="640" cy="300" r="7" fill="#285c9e"/>
+  <text x="660" y="295" font-family="Arial,sans-serif" font-size="24">P（场点 r）</text>
+  <circle cx="660" cy="340" r="26" fill="none" stroke="#285c9e" stroke-width="3"/>
+  <circle cx="660" cy="340" r="4" fill="#285c9e"/>
+  <text x="700" y="352" fill="#285c9e" font-family="Arial,sans-serif" font-size="24">dB（垂直纸面向外）</text>
+  <text x="140" y="200" font-family="Arial,sans-serif" font-size="22">r′</text>
+  <text x="690" y="170" font-family="Arial,sans-serif" font-size="20">右手定则：dl′ × R</text>
+</svg>

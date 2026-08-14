@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-labelledby="title desc">
+  <title id="title">无限带电平面与柱形高斯面</title><desc id="desc">面电荷密度 sigma 的平面穿过面积 A 的高斯柱面，电场从上下两底面垂直穿出。</desc>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L9 3L0 6Z" fill="#315d9b"/></marker></defs>
+  <rect width="900" height="430" fill="#fff"/>
+  <polygon points="90,245 630,245 815,330 275,330" fill="#f2cf72" stroke="#9d7a18" stroke-width="2"/>
+  <text x="105" y="300" font-family="Arial,sans-serif" font-size="22">无限大平面，面电荷密度 σ</text>
+  <ellipse cx="470" cy="120" rx="145" ry="45" fill="#d9e7f7" fill-opacity=".55" stroke="#315d9b" stroke-width="2"/>
+  <ellipse cx="470" cy="280" rx="145" ry="45" fill="#d9e7f7" fill-opacity=".25" stroke="#315d9b" stroke-width="2"/>
+  <line x1="325" y1="120" x2="325" y2="280" stroke="#315d9b" stroke-width="2"/>
+  <line x1="615" y1="120" x2="615" y2="280" stroke="#315d9b" stroke-width="2"/>
+  <text x="630" y="185" font-family="Arial,sans-serif" font-size="20">高斯柱面</text>
+  <text x="455" y="128" font-family="Arial,sans-serif" font-size="21">A</text>
+  <line x1="410" y1="110" x2="410" y2="35" stroke="#315d9b" stroke-width="4" marker-end="url(#a)"/>
+  <line x1="530" y1="110" x2="530" y2="35" stroke="#315d9b" stroke-width="4" marker-end="url(#a)"/>
+  <line x1="410" y1="292" x2="410" y2="385" stroke="#315d9b" stroke-width="4" marker-end="url(#a)"/>
+  <line x1="530" y1="292" x2="530" y2="385" stroke="#315d9b" stroke-width="4" marker-end="url(#a)"/>
+  <text x="548" y="65" fill="#315d9b" font-family="Arial,sans-serif" font-size="22">E = σ/(2ε₀)</text>
+  <text x="548" y="390" fill="#315d9b" font-family="Arial,sans-serif" font-size="22">E = σ/(2ε₀)</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-labelledby="title desc">
+  <title id="title">球形电容器</title><desc id="desc">同心内外导体半径分别为 a 与 b，电荷为正 Q 和负 Q，电场仅存在于两球之间并沿径向。</desc>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L9 3L0 6Z" fill="#315d9b"/></marker></defs>
+  <rect width="900" height="500" fill="#fff"/>
+  <circle cx="430" cy="250" r="195" fill="#e8edf3" stroke="#333" stroke-width="4"/>
+  <circle cx="430" cy="250" r="92" fill="#f4c6c3" stroke="#333" stroke-width="4"/>
+  <circle cx="430" cy="250" r="5" fill="#111"/><text x="408" y="280" font-family="Arial,sans-serif" font-size="20">O</text>
+  <line x1="430" y1="250" x2="522" y2="250" stroke="#222" stroke-width="2" marker-end="url(#a)"/><text x="472" y="235" font-family="Arial,sans-serif" font-size="22">a</text>
+  <line x1="430" y1="250" x2="625" y2="250" stroke="#222" stroke-width="2" marker-end="url(#a)"/><text x="570" y="280" font-family="Arial,sans-serif" font-size="22">b</text>
+  <g stroke="#315d9b" stroke-width="3" marker-end="url(#a)"><line x1="525" y1="170" x2="590" y2="115"/><line x1="525" y1="330" x2="590" y2="385"/><line x1="335" y1="170" x2="270" y2="115"/><line x1="335" y1="330" x2="270" y2="385"/></g>
+  <text x="650" y="120" fill="#315d9b" font-family="Arial,sans-serif" font-size="22">E(r), a &lt; r &lt; b</text>
+  <text x="390" y="165" fill="#b92d2a" font-family="Arial,sans-serif" font-size="25">+Q</text>
+  <text x="392" y="65" fill="#2f609c" font-family="Arial,sans-serif" font-size="25">−Q</text>
+  <text x="650" y="375" font-family="Arial,sans-serif" font-size="20">介质介电常数 ε</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-labelledby="title desc">
+  <title id="title">两接地平板之间的点电荷</title><desc id="desc">接地板位于 z 等于零和 d，真实点电荷位于 z0，并标出最邻近的负镜像电荷。</desc>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L9 3L0 6Z" fill="#222"/></marker></defs>
+  <rect width="900" height="500" fill="#fff"/>
+  <rect x="110" y="85" width="680" height="20" fill="#777"/><rect x="110" y="395" width="680" height="20" fill="#777"/>
+  <text x="115" y="70" font-family="Arial,sans-serif" font-size="21">上板：z=d，φ=0</text><text x="115" y="450" font-family="Arial,sans-serif" font-size="21">下板：z=0，φ=0</text>
+  <line x1="175" y1="395" x2="175" y2="105" stroke="#222" stroke-width="2" marker-end="url(#a)"/><text x="154" y="135" font-family="Arial,sans-serif" font-size="22">z</text>
+  <circle cx="460" cy="285" r="25" fill="#d64b45"/><text x="448" y="293" fill="#fff" font-family="Arial,sans-serif" font-size="21">+q</text>
+  <text x="500" y="292" font-family="Arial,sans-serif" font-size="21">真实电荷：z=z₀</text>
+  <circle cx="460" cy="475" r="20" fill="none" stroke="#3577c8" stroke-width="3" stroke-dasharray="6 5"/><text x="450" y="482" fill="#3577c8" font-family="Arial,sans-serif" font-size="18">−q</text>
+  <circle cx="460" cy="25" r="20" fill="none" stroke="#3577c8" stroke-width="3" stroke-dasharray="6 5"/><text x="450" y="32" fill="#3577c8" font-family="Arial,sans-serif" font-size="18">−q</text>
+  <text x="600" y="35" fill="#3577c8" font-family="Arial,sans-serif" font-size="19">第一组镜像；完整解需无限序列</text>
+  <line x1="410" y1="395" x2="410" y2="285" stroke="#222" stroke-width="1.5" marker-start="url(#a)" marker-end="url(#a)"/><text x="370" y="345" font-family="Arial,sans-serif" font-size="21">z₀</text>
+  <line x1="720" y1="395" x2="720" y2="105" stroke="#222" stroke-width="1.5" marker-start="url(#a)" marker-end="url(#a)"/><text x="740" y="255" font-family="Arial,sans-serif" font-size="21">d</text>
+</svg>

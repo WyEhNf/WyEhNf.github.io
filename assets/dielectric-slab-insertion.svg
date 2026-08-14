@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-labelledby="title desc">
+  <title id="title">电介质板插入平行板电容器</title><desc id="desc">宽 b、长 a、间距 d 的平行板电容器，介电常数 epsilon 的电介质板从右侧插入深度 x，受到向内的力 F。</desc>
+  <defs><marker id="r" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L9 3L0 6Z" fill="#d84b45"/></marker></defs>
+  <rect width="900" height="430" fill="#fff"/>
+  <rect x="120" y="95" width="660" height="26" fill="#f2cf72" stroke="#9d7a18" stroke-width="2"/>
+  <rect x="120" y="310" width="660" height="26" fill="#f2cf72" stroke="#9d7a18" stroke-width="2"/>
+  <rect x="480" y="121" width="300" height="189" fill="#d9e7f7" fill-opacity=".7" stroke="#285c9e" stroke-width="2"/>
+  <text x="580" y="225" fill="#285c9e" font-family="Arial,sans-serif" font-size="24">ε</text>
+  <text x="270" y="225" font-family="Arial,sans-serif" font-size="24">ε₀</text>
+  <text x="150" y="150" font-family="Arial,sans-serif" font-size="21">+</text>
+  <text x="150" y="365" font-family="Arial,sans-serif" font-size="21">−</text>
+  <text x="130" y="80" font-family="Arial,sans-serif" font-size="20">电压 V</text>
+  <line x1="120" y1="135" x2="120" y2="297" stroke="#222" stroke-width="2" marker-start="url(#r)" marker-end="url(#r)"/>
+  <text x="45" y="225" font-family="Arial,sans-serif" font-size="22">d</text>
+  <line x1="480" y1="60" x2="780" y2="60" stroke="#222" stroke-width="2" marker-start="url(#r)" marker-end="url(#r)"/>
+  <text x="600" y="50" font-family="Arial,sans-serif" font-size="22">x</text>
+  <line x1="120" y1="390" x2="780" y2="390" stroke="#222" stroke-width="2" marker-start="url(#r)" marker-end="url(#r)"/>
+  <text x="420" y="415" font-family="Arial,sans-serif" font-size="22">a</text>
+  <line x1="780" y1="215" x2="690" y2="215" stroke="#d84b45" stroke-width="6" marker-end="url(#r)"/>
+  <text x="800" y="235" fill="#d84b45" font-family="Arial,sans-serif" font-size="24">F</text>
+</svg>

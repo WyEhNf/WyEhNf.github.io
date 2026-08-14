@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-labelledby="title desc">
+  <title id="title">圆柱形电容器</title><desc id="desc">长度 L 的同轴圆柱电容器截面，内外半径为 a 与 b，电场在介质中沿径向。</desc>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L9 3L0 6Z" fill="#315d9b"/></marker></defs>
+  <rect width="900" height="500" fill="#fff"/>
+  <ellipse cx="410" cy="100" rx="185" ry="55" fill="#e8edf3" stroke="#333" stroke-width="3"/>
+  <path d="M225 100V385 M595 100V385" stroke="#333" stroke-width="3"/>
+  <ellipse cx="410" cy="385" rx="185" ry="55" fill="#e8edf3" stroke="#333" stroke-width="3"/>
+  <ellipse cx="410" cy="100" rx="73" ry="23" fill="#f4c6c3" stroke="#333" stroke-width="3"/>
+  <path d="M337 100V385 M483 100V385" stroke="#333" stroke-width="3"/>
+  <ellipse cx="410" cy="385" rx="73" ry="23" fill="#f4c6c3" stroke="#333" stroke-width="3"/>
+  <line x1="410" y1="100" x2="483" y2="100" stroke="#222" stroke-width="2" marker-end="url(#a)"/><text x="448" y="82" font-family="Arial,sans-serif" font-size="21">a</text>
+  <line x1="410" y1="100" x2="595" y2="100" stroke="#222" stroke-width="2" marker-end="url(#a)"/><text x="540" y="82" font-family="Arial,sans-serif" font-size="21">b</text>
+  <line x1="680" y1="100" x2="680" y2="385" stroke="#222" stroke-width="2" marker-start="url(#a)" marker-end="url(#a)"/><text x="700" y="250" font-family="Arial,sans-serif" font-size="22">L</text>
+  <g stroke="#315d9b" stroke-width="3" marker-end="url(#a)"><line x1="485" y1="250" x2="570" y2="250"/><line x1="335" y1="250" x2="250" y2="250"/></g>
+  <text x="505" y="235" fill="#315d9b" font-family="Arial,sans-serif" font-size="21">E(r)</text>
+  <text x="370" y="275" fill="#b92d2a" font-family="Arial,sans-serif" font-size="22">+λ</text><text x="590" y="275" fill="#2f609c" font-family="Arial,sans-serif" font-size="22">−λ</text>
+</svg>

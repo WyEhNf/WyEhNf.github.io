@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="950" height="500" viewBox="0 0 950 500" role="img" aria-labelledby="title desc">
+  <title id="title">磁场在两种介质界面处的边值关系</title><desc id="desc">介质界面两侧的 B1 与 B2，法线 n，夹角 theta1 与 theta2，界面面电流 K 流入纸面；B_n 连续，H_t 相差 K。</desc>
+  <defs><marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0 0L9 3L0 6Z" fill="#285c9e"/></marker></defs>
+  <rect width="950" height="500" fill="#fff"/>
+  <rect width="950" height="250" fill="#e8f0fa"/>
+  <rect y="250" width="950" height="250" fill="#f6e6ce"/>
+  <line x1="0" y1="250" x2="950" y2="250" stroke="#333" stroke-width="4"/>
+  <text x="40" y="55" font-family="Arial" font-size="24">介质 2：μ₂</text>
+  <text x="40" y="455" font-family="Arial" font-size="24">介质 1：μ₁</text>
+  <line x1="475" y1="420" x2="475" y2="75" stroke="#777" stroke-dasharray="8 7"/>
+  <text x="490" y="90" font-family="Arial" font-size="20">法线 n</text>
+  <line x1="355" y1="415" x2="475" y2="250" stroke="#285c9e" stroke-width="5" marker-end="url(#a)"/>
+  <line x1="475" y1="250" x2="675" y2="100" stroke="#d84b45" stroke-width="5" marker-end="url(#a)"/>
+  <text x="350" y="380" font-family="Arial" font-size="22">B₁, H₁</text>
+  <text x="665" y="95" font-family="Arial" font-size="22">B₂, H₂</text>
+  <path d="M475 335 A85 85 0 0 0 425 320" fill="none" stroke="#333" stroke-width="2"/>
+  <text x="430" y="360" font-family="Arial" font-size="21">θ₁</text>
+  <path d="M475 165 A85 85 0 0 1 540 180" fill="none" stroke="#333" stroke-width="2"/>
+  <text x="520" y="150" font-family="Arial" font-size="21">θ₂</text>
+  <circle cx="475" cy="250" r="16" fill="#fff" stroke="#333" stroke-width="2"/>
+  <line x1="467" y1="242" x2="483" y2="258" stroke="#333" stroke-width="2"/>
+  <line x1="483" y1="242" x2="467" y2="258" stroke="#333" stroke-width="2"/>
+  <text x="505" y="285" font-family="Arial" font-size="19">K（流入纸面）</text>
+  <text x="610" y="330" font-family="Arial" font-size="19">B₂n = B₁n；H₂t − H₁t = K_f</text>
+</svg>

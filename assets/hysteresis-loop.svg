@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="450" viewBox="0 0 900 450" role="img" aria-labelledby="title desc">
+  <title id="title">铁电介质的电滞回线</title><desc id="desc">D-E 电滞回线，标注剩余极化 Pr 与矫顽场 Ec，回线面积为一个周期的能量损耗。</desc>
+  <defs><marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0 0L9 3L0 6Z" fill="#333"/></marker></defs>
+  <rect width="900" height="450" fill="#fff"/>
+  <path d="M160 390 C250 395 330 350 300 225 C280 140 380 100 450 80 C560 52 660 40 740 60 C800 75 780 140 630 225 C540 270 470 300 450 370 C430 400 350 410 160 390 Z"
+        fill="#f4c6c3" fill-opacity="0.55" stroke="#b92d2a" stroke-width="4"/>
+  <line x1="130" y1="225" x2="770" y2="225" stroke="#333" stroke-width="3" marker-end="url(#a)"/>
+  <line x1="450" y1="410" x2="450" y2="40" stroke="#333" stroke-width="3" marker-end="url(#a)"/>
+  <text x="778" y="235" font-family="Arial,sans-serif" font-size="24">E</text>
+  <text x="465" y="45" font-family="Arial,sans-serif" font-size="24">D</text>
+  <circle cx="450" cy="80" r="5" fill="#b92d2a"/><text x="465" y="78" font-family="Arial,sans-serif" font-size="20">+P_r</text>
+  <circle cx="450" cy="370" r="5" fill="#b92d2a"/><text x="465" y="380" font-family="Arial,sans-serif" font-size="20">−P_r</text>
+  <circle cx="300" cy="225" r="5" fill="#b92d2a"/><text x="280" y="215" font-family="Arial,sans-serif" font-size="20">−E_c</text>
+  <circle cx="630" cy="225" r="5" fill="#b92d2a"/><text x="600" y="215" font-family="Arial,sans-serif" font-size="20">+E_c</text>
+  <text x="560" y="160" fill="#b92d2a" font-family="Arial,sans-serif" font-size="22">回线面积 = 每周期损耗</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-labelledby="title desc">
+  <title id="title">星形与三角形电阻网络的等价变换</title><desc id="desc">左为三臂电阻 Ra、Rb、Rc 的星形网络，右为三角形网络 Rab、Rbc、Rca，两端点 a、b、c 的等效电阻相同。</desc>
+  <rect width="900" height="430" fill="#fff"/>
+  <text x="130" y="55" font-family="Arial,sans-serif" font-size="24">星形（Y）</text>
+  <text x="620" y="55" font-family="Arial,sans-serif" font-size="24">三角形（Δ）</text>
+  <g stroke="#555" stroke-width="3">
+    <line x1="150" y1="90" x2="150" y2="225"/>
+    <line x1="70" y1="340" x2="150" y2="225"/>
+    <line x1="230" y1="340" x2="150" y2="225"/>
+    <line x1="650" y1="90" x2="560" y2="340"/>
+    <line x1="560" y1="340" x2="740" y2="340"/>
+    <line x1="740" y1="340" x2="650" y2="90"/>
+  </g>
+  <g fill="none" stroke="#d84b45" stroke-width="4">
+    <path d="M150 105 l9 12 l-18 12 l18 12 l-18 12 l18 12 l-18 12 l9 10"/>
+    <path d="M84 322 l15 -9 l3 15 l-15 9 z" transform="translate(0,0)"/>
+    <path d="M150 225 l-12 10 l-16 -4 l10 12 l-12 10 l17 4 l-6 -14 l14 -5 z"/>
+    <path d="M222 322 l-15 -9 l-3 15 l15 9 z" transform="translate(4,-2)"/>
+    <path d="M650 108 l-15 8 l-4 -16 l16 6 z"/>
+    <path d="M632 120 l14 -4 l4 15 l-15 -3 z"/>
+    <path d="M560 322 l15 -10 l-2 16 l-14 -9 z"/>
+    <path d="M575 310 l-14 6 l-5 -15 l13 9 z"/>
+    <path d="M738 322 l-15 -10 l3 16 l14 -9 z"/>
+    <path d="M723 310 l14 6 l5 -15 l-13 9 z"/>
+  </g>
+  <circle cx="150" cy="225" r="7" fill="#333"/>
+  <text x="160" y="240" font-family="Arial,sans-serif" font-size="21">O</text>
+  <text x="160" y="95" font-family="Arial,sans-serif" font-size="22">a</text>
+  <text x="45" y="365" font-family="Arial,sans-serif" font-size="22">b</text>
+  <text x="240" y="365" font-family="Arial,sans-serif" font-size="22">c</text>
+  <text x="120" y="160" fill="#d84b45" font-family="Arial,sans-serif" font-size="22">R_a</text>
+  <text x="100" y="300" fill="#d84b45" font-family="Arial,sans-serif" font-size="22">R_b</text>
+  <text x="200" y="300" fill="#d84b45" font-family="Arial,sans-serif" font-size="22">R_c</text>
+  <text x="660" y="95" font-family="Arial,sans-serif" font-size="22">a</text>
+  <text x="535" y="365" font-family="Arial,sans-serif" font-size="22">b</text>
+  <text x="755" y="365" font-family="Arial,sans-serif" font-size="22">c</text>
+  <text x="610" y="230" fill="#d84b45" font-family="Arial,sans-serif" font-size="22">R_ab</text>
+  <text x="595" y="330" fill="#d84b45" font-family="Arial,sans-serif" font-size="22">R_bc</text>
+  <text x="700" y="230" fill="#d84b45" font-family="Arial,sans-serif" font-size="22">R_ca</text>
+</svg>

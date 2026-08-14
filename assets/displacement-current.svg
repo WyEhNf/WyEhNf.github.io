@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="450" viewBox="0 0 900 450" role="img" aria-labelledby="title desc">
+  <title id="title">充电电容器与位移电流</title><desc id="desc">充电中的平行板电容器：安培回路 C，曲面 S1 穿过导线、S2 从极板间穿过，极板间电场变化形成位移电流。</desc>
+  <defs>
+    <marker id="b" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L9 3L0 6Z" fill="#285c9e"/></marker>
+    <marker id="r" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L9 3L0 6Z" fill="#d84b45"/></marker>
+  </defs>
+  <rect width="900" height="450" fill="#fff"/>
+  <rect x="330" y="110" width="26" height="230" fill="#f2cf72" stroke="#9d7a18" stroke-width="2"/>
+  <rect x="570" y="110" width="26" height="230" fill="#f2cf72" stroke="#9d7a18" stroke-width="2"/>
+  <text x="343" y="95" font-family="Arial,sans-serif" font-size="20">+Q</text>
+  <text x="583" y="95" font-family="Arial,sans-serif" font-size="20">−Q</text>
+  <line x1="80" y1="225" x2="330" y2="225" stroke="#d84b45" stroke-width="6" marker-end="url(#r)"/>
+  <line x1="596" y1="225" x2="820" y2="225" stroke="#d84b45" stroke-width="6" marker-end="url(#r)"/>
+  <text x="150" y="205" fill="#d84b45" font-family="Arial,sans-serif" font-size="24">I</text>
+  <g stroke="#285c9e" stroke-width="4" marker-end="url(#b)">
+    <line x1="380" y1="200" x2="470" y2="200"/>
+    <line x1="380" y1="260" x2="470" y2="260"/>
+  </g>
+  <text x="480" y="210" fill="#285c9e" font-family="Arial,sans-serif" font-size="22">E（增大）</text>
+  <text x="380" y="300" fill="#285c9e" font-family="Arial,sans-serif" font-size="22">J_d = ∂D/∂t</text>
+  <circle cx="240" cy="225" r="75" fill="none" stroke="#285c9e" stroke-width="3" stroke-dasharray="10 8"/>
+  <text x="225" y="105" fill="#285c9e" font-family="Arial,sans-serif" font-size="22">回路 C</text>
+  <line x1="120" y1="225" x2="330" y2="225" stroke="#b92d2a" stroke-width="3" stroke-dasharray="6 6"/>
+  <text x="190" y="250" fill="#b92d2a" font-family="Arial,sans-serif" font-size="20">S₁（穿过导线）</text>
+  <path d="M120 225 C300 60 600 60 330 225" fill="none" stroke="#b92d2a" stroke-width="3" stroke-dasharray="6 6"/>
+  <text x="330" y="55" fill="#b92d2a" font-family="Arial,sans-serif" font-size="20">S₂（穿过极板间）</text>
+  <text x="120" y="395" font-family="Arial,sans-serif" font-size="20">穿过 S₁ 的是传导电流 I；穿过 S₂ 的只有位移电流——两者必须相等，环量才有唯一值。</text>
+</svg>

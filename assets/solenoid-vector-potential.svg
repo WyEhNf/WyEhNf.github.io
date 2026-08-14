@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="450" viewBox="0 0 900 450" role="img" aria-labelledby="title desc">
+  <title id="title">螺线管截面的磁场与矢势</title><desc id="desc">无限长螺线管截面：管外磁场为零但矢势不为零，A 沿同心圆切向，管内 A 等于 Br/2，管外等于 Ba2/(2r)。</desc>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L9 3L0 6Z" fill="#285c9e"/></marker></defs>
+  <rect width="900" height="450" fill="#fff"/>
+  <circle cx="450" cy="225" r="130" fill="#f4c6c3" stroke="#d84b45" stroke-width="3"/>
+  <circle cx="450" cy="225" r="100" fill="#fff" stroke="#d84b45" stroke-width="3"/>
+  <g fill="#d84b45">
+    <circle cx="450" cy="95" r="7"/><circle cx="546" cy="110" r="7"/><circle cx="580" cy="225" r="7"/><circle cx="546" cy="340" r="7"/>
+    <circle cx="450" cy="355" r="7"/><circle cx="354" cy="340" r="7"/><circle cx="320" cy="225" r="7"/><circle cx="354" cy="110" r="7"/>
+  </g>
+  <text x="520" y="160" fill="#d84b45" font-family="Arial,sans-serif" font-size="21">螺线管截面（半径 a）</text>
+  <g fill="none" stroke="#285c9e" stroke-width="3" stroke-dasharray="3 5">
+    <circle cx="450" cy="225" r="55"/>
+    <circle cx="450" cy="225" r="195"/>
+  </g>
+  <g stroke="#285c9e" stroke-width="4" marker-end="url(#a)">
+    <line x1="450" y1="170" x2="505" y2="170"/>
+    <line x1="450" y1="30" x2="450" y2="60"/>
+    <line x1="450" y1="420" x2="450" y2="385"/>
+  </g>
+  <text x="520" y="60" fill="#285c9e" font-family="Arial,sans-serif" font-size="20">A = Ba²/(2r)</text>
+  <text x="465" y="195" fill="#285c9e" font-family="Arial,sans-serif" font-size="20">A = Br/2</text>
+  <g stroke="#285c9e" stroke-width="4">
+    <line x1="390" y1="225" x2="360" y2="225"/><line x1="352" y1="215" x2="352" y2="235"/><line x1="358" y1="215" x2="358" y2="235"/>
+  </g>
+  <text x="330" y="245" fill="#285c9e" font-family="Arial,sans-serif" font-size="21">B ≠ 0（进入纸面）</text>
+  <text x="120" y="420" font-family="Arial,sans-serif" font-size="20">管外 B = 0，但 A ≠ 0——矢势沿管外空间“拖曳”，编码管内磁通。</text>
+</svg>
