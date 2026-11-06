@@ -1,0 +1,74 @@
+/* Show the entire night painting, with the atmospheric layer filling its edges. */
+.scenery .night-art{--night-height:clamp(320px,40vw,560px);top:78px;left:50%;right:auto;bottom:auto;width:min(100%,calc(var(--night-height) * 1.5));height:auto;transform:translateX(-50%);object-fit:contain;object-position:center;mask-image:linear-gradient(to right,transparent,#000 9%,#000 91%,transparent),linear-gradient(transparent,#000 9%,#000 90%,transparent);mask-composite:intersect}
+[data-theme=night] .home .hero{min-height:calc(clamp(320px,40vw,560px) + 40px)!important}
+[data-theme=night] body:before{filter:blur(30px) brightness(.55)}
+.inner .scenery .night-art{top:76px;--night-height:300px}
+[data-theme=night] .inner .hero{min-height:310px}
+.prologue{padding:32px 0 28px}
+.prologue-copy{max-width:710px;margin:auto;text-align:justify;font:23px/2.15 var(--brush);letter-spacing:.045em;text-indent:2em}
+.inner .content-sheet{background-image:linear-gradient(90deg,#ad9a6a0a 1px,transparent 1px);background-size:5px 5px;border:1px solid var(--edge);border-top:2px solid var(--gold);box-shadow:0 20px 70px #122c3226,3px 3px 0 #b2a58222}
+.inner .section-top{padding-bottom:24px;position:relative}
+.inner .section-top:after{content:'';position:absolute;left:0;bottom:-1px;width:48px;height:2px;background:var(--gold)}
+.inner .section-top h1{font-size:36px;letter-spacing:-.025em}
+.inner .section-count{font-style:italic;font-size:17px}
+.visiting-cards{gap:24px;padding:32px 0 15px}
+.visiting-cards .friend{display:grid;grid-template-columns:60px minmax(0,1fr) 20px;align-items:center;gap:20px;padding:32px 25px 36px;border:1px solid var(--edge);border-radius:0;background:linear-gradient(120deg,var(--hover-wash),transparent);box-shadow:3px 3px 0 var(--hover-wash);transition:transform .25s,border-color .25s,box-shadow .25s}
+.visiting-cards .friend:before{content:'';position:absolute;inset:6px;border:1px solid var(--edge);pointer-events:none;opacity:.35}
+.visiting-cards .friend:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:5px 8px 18px #16303614}
+.friend-monogram{font:italic 38px/1.4 Georgia!important;color:var(--gold);width:60px;height:66px;display:grid;place-items:center;border-right:1px solid var(--edge)}
+.friend-info h2{font:25px/1.3 Georgia,var(--body)}
+.friend-info p{font-size:12px;margin:7px 0 11px}
+.friend-address{font:10px/1.6 var(--body)!important;color:var(--muted);overflow-wrap:anywhere}
+.friend-visit{font-size:20px!important;align-self:start;color:var(--gold)}
+.friend-number{position:absolute;right:20px;bottom:13px;font:italic 10px Georgia!important;opacity:.5}
+.contact-cards{padding:34px 0 20px;display:grid;gap:20px}
+.contact-card{display:grid;grid-template-columns:70px minmax(0,1fr) 25px;align-items:center;gap:25px;border:1px solid var(--edge);padding:28px 30px;background:linear-gradient(100deg,var(--hover-wash),transparent);transition:border-color .25s,background .25s}
+.contact-card:hover{border-color:var(--gold);background:var(--hover-wash)}
+.contact-symbol{font:32px/1.2 Georgia;color:var(--gold);border-right:1px solid var(--edge);height:60px;display:flex;align-items:center}
+.contact-label{font:10px/1.4 var(--body);text-transform:uppercase;letter-spacing:.18em;color:var(--muted)}
+.contact-card h2{font:22px/1.6 Georgia,var(--body);overflow-wrap:anywhere;margin-top:4px}
+.taxonomy a{border-radius:0;background:linear-gradient(110deg,var(--hover-wash),transparent);box-shadow:3px 3px 0 var(--hover-wash)}
+.taxonomy-empty{min-height:270px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:var(--muted)}
+.taxonomy:empty{display:none}.taxonomy-empty svg{width:40px;height:40px;stroke-width:1}.taxonomy-empty p{font:22px var(--brush)}.taxonomy-empty a{font:13px Georgia;margin-top:8px;padding:9px 17px;border:1px solid var(--edge)}
+.archive-ledger{padding:20px 0}
+.archive-year{display:grid;grid-template-columns:100px minmax(0,1fr);gap:35px}
+.archive-year>h2{font:italic 29px/1.4 Georgia;color:var(--gold);padding-top:22px}
+.archive-year .post-list{border-left:1px solid var(--edge);padding-left:28px}
+.archive-year .post-row{position:relative}.archive-year .post-row:before{content:'';width:5px;height:5px;border-radius:50%;background:var(--gold);position:absolute;left:-31px;top:36px}
+/* CV uses normal reading typography; only the surrounding blog keeps its brush face. */
+.cv-page .content-sheet{max-width:1180px;padding:46px 54px 30px}
+.cv-document{font-family:var(--body);font-size:14px;line-height:1.7}
+.cv-header{display:flex;align-items:center;justify-content:space-between;gap:40px;padding-bottom:36px;border-bottom:1px solid var(--edge)}
+.cv-kicker{font:10px/1.5 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.cv-header h1{font:400 clamp(32px,4vw,49px)/1.2 Georgia,var(--body);letter-spacing:-.045em;margin:18px 0 8px}
+.cv-english-name{font:17px/1.5 Georgia;color:var(--muted)}
+.cv-profile{font-size:13px;border-left:1px solid var(--edge);padding-left:30px;max-width:440px}
+.cv-focus{color:var(--gold);margin-top:10px}
+.cv-links{display:flex;gap:22px;font:12px/1.4 Georgia;margin-top:18px}.cv-links a{border-bottom:1px solid var(--edge);padding-bottom:3px}
+.cv-sections{display:flex;gap:30px;padding:16px 0;border-bottom:1px solid var(--edge);font:12px/1.5 Georgia;color:var(--muted)}
+.cv-sections a{padding:5px 0}
+.cv-section{display:grid;grid-template-columns:145px minmax(0,1fr);gap:28px;padding:35px 0;border-bottom:1px solid var(--edge);scroll-margin-top:100px}
+.cv-section:last-child{border:0;padding-bottom:10px}
+.cv-section-heading>span{font:italic 12px Georgia;color:var(--gold);display:block;margin-bottom:9px}
+.cv-section-heading h2{font:25px/1.3 Georgia;font-weight:400}
+.cv-section-content{min-width:0}
+.cv-project{padding:0 0 22px;margin-bottom:22px;border-bottom:1px solid var(--edge)}
+.cv-project:last-child{border:0;margin:0;padding:0}
+.cv-project h3{font:600 17px/1.5 var(--body);margin-bottom:7px;letter-spacing:-.015em}
+.cv-project h3 a{display:flex;justify-content:space-between;gap:15px}.cv-project h3 span{color:var(--gold);font-weight:400}
+.cv-project p{font-size:14px;line-height:1.7;color:var(--muted)}
+.stack-tags{list-style:none;display:flex;gap:6px 9px;flex-wrap:wrap;padding:0;margin:12px 0 0}
+.stack-tags li{font:10px/1.5 var(--body);padding:3px 8px;border:1px solid var(--edge);background:var(--hover-wash);color:var(--muted)}
+.cv-award{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;padding:18px 0;border-bottom:1px solid var(--edge)}
+.cv-award:first-child{padding-top:0}.cv-award:last-child{border:0;padding-bottom:0}
+.cv-award h3,.cv-teaching h3{font:500 15px/1.65 var(--body)}
+.cv-award p,.cv-teaching p{font-size:12px;color:var(--muted);margin-top:5px}
+.award-rank{font:12px/1.5 Georgia;color:var(--gold);white-space:nowrap;border:1px solid var(--edge);padding:4px 10px}
+.award-rank:empty{display:none}.cv-term{font:italic 13px Georgia;color:var(--gold);display:block;margin-bottom:14px}
+.cv-skills{margin:0;display:grid;gap:20px}
+.cv-skills dt{font:500 12px var(--body);margin-bottom:7px}.cv-skills dd{font-size:12px;color:var(--muted);margin:0;line-height:1.9}
+@media(max-width:1000px){.visiting-cards .friend{padding:28px 20px;grid-template-columns:45px minmax(0,1fr) 16px;gap:15px}.friend-monogram{width:45px;font-size:31px!important}.cv-page .content-sheet{padding:32px}.cv-header{gap:24px}.cv-profile{padding-left:22px}.cv-section{grid-template-columns:115px minmax(0,1fr);gap:20px}}
+@media(max-width:650px){.prologue-copy{font-size:20px;line-height:2.05;letter-spacing:.02em}.inner .scenery .night-art{--night-height:260px}[data-theme=night] .inner .hero{min-height:280px}.visiting-cards{grid-template-columns:1fr;gap:16px;padding-top:26px}.contact-card{grid-template-columns:40px minmax(0,1fr) 15px;gap:15px;padding:22px 18px}.contact-symbol{font-size:24px;height:50px}.contact-card h2{font-size:17px}.contact-label{font-size:9px}.archive-year{display:block}.archive-year>h2{padding:4px 0 15px;font-size:24px}.archive-year .post-list{padding-left:15px}.archive-year .post-row:before{left:-18px}.cv-page .content-sheet{padding:28px 22px}.cv-header{display:block;padding-bottom:25px}.cv-header h1{font-size:36px}.cv-profile{border-left:0;border-top:1px solid var(--edge);padding:20px 0 0;margin-top:22px;font-size:12px}.cv-sections{gap:0;justify-content:space-between}.cv-section{display:block;padding:27px 0}.cv-section-heading{display:flex;align-items:baseline;gap:12px;margin-bottom:22px}.cv-section-heading>span{margin:0}.cv-section-heading h2{font-size:24px}.cv-project h3{font-size:16px}.cv-award{gap:12px;flex-wrap:wrap}.cv-award h3{font-size:14px}.cv-award>div{flex:1;min-width:180px}.award-rank{font-size:11px}.cv-skills{gap:18px}}
+@media(max-width:360px){.prologue-copy{font-size:18px}.cv-header h1{font-size:31px}.cv-page .content-sheet{padding:24px 17px}.cv-sections{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.friend,.contact-card{transition:none}.visiting-cards .friend:hover{transform:none}}
+@media print{.cv-page{background:#fff!important;color:#111!important}.cv-page:before,.cv-sections,.reading-dock{display:none!important}.cv-page .content-sheet{background:#fff;padding:0;max-width:none;border:0;box-shadow:none}.cv-header{padding-bottom:18px}.cv-header h1{font-size:32px}.cv-section{padding:16px 0;grid-template-columns:100px 1fr;gap:20px}.cv-section-heading h2{font-size:18px}.cv-project{padding-bottom:10px;margin-bottom:10px;break-inside:avoid}.cv-project h3{font-size:12px}.cv-project p{font-size:10px}.cv-project p,.cv-profile,.cv-award p,.cv-skills dd{color:#333}.stack-tags li{font-size:8px}.cv-kicker{color:#555}.cv-award{break-inside:avoid}.cv-header,.cv-teaching{break-inside:avoid}.cv-document a{color:inherit}.cv-section-heading{break-after:avoid}}

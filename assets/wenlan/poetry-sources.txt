@@ -1,0 +1,4 @@
+Classical poems are public domain. New transcriptions from chinese-poetry/chinese-poetry, MIT license in poetry-LICENSE.txt.
+https://github.com/chinese-poetry/chinese-poetry/blob/master/宋词/宋词三百首.json
+https://github.com/chinese-poetry/chinese-poetry/blob/master/全唐诗/唐诗三百首.json
+Original 12 entries retain individual source links. Author metadata is retained for provenance and is not displayed.
