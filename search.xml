@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>FlashChroma</title>
+      <link href="//flashchroma/"/>
+      <url>//flashchroma/</url>
+      
+        <content type="html"><![CDATA[<div id="pdf-container-flashchroma"></div><p><a href="/files/FlashChroma.pdf">Download PDF</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Systems </tag>
+            
+            <tag> Optimization </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Introduction to Transformer</title>
       <link href="//transformer/"/>
       <url>//transformer/</url>
